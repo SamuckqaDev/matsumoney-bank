@@ -70,4 +70,12 @@ public class Account {
             this.balance -= value;
         }
     }
+
+    public void transfer(Account account, Double value) {
+        if (value > 0) {
+           this.withDraw(value);
+           account.deposit(value);
+        }
+    }
+
 }

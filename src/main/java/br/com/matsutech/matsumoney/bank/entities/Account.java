@@ -55,12 +55,12 @@ public class Account {
 
     //Methods;
     public void deposit(Double value) {
-          if (value > 0) {
+        if (value > 0) {
             this.balance += value;
         } else {
-              System.out.println("Valor Inexistente");
+            System.out.println("Valor Inexistente");
         }
-       
+
     }
 
     public void withDraw(Double value) {

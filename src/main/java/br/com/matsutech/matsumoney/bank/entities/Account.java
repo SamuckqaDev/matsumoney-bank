@@ -60,7 +60,6 @@ public class Account {
         } else {
             System.out.println("Valor Inexistente");
         }
-
     }
 
     public void withDraw(Double value) {
@@ -73,9 +72,12 @@ public class Account {
 
     public void transfer(Account account, Double value) {
         if (value > 0) {
-           this.withDraw(value);
-           account.deposit(value);
+            this.withDraw(value);
+            account.deposit(value);
         }
     }
 
+    public static Account newAccount(Integer number, Integer agency) {
+        return new Account(number, agency);
+    }
 }

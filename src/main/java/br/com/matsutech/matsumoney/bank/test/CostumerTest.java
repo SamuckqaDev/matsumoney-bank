@@ -1,7 +1,6 @@
 package br.com.matsutech.matsumoney.bank.test;
 
 import br.com.matsutech.matsumoney.bank.entities.Costumer;
-
 /**
  *
  * @author SamuckqaDev
